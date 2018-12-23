@@ -12,16 +12,7 @@
  */
 package org.activiti.app.security;
 
-import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.Date;
-
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import org.activiti.app.domain.idm.PersistentToken;
-import org.activiti.app.security.ActivitiAppUser;
 import org.activiti.app.service.idm.PersistentTokenService;
 import org.activiti.engine.IdentityService;
 import org.activiti.engine.identity.User;
@@ -39,6 +30,13 @@ import org.springframework.security.web.authentication.rememberme.RememberMeAuth
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ReflectionUtils;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.Date;
 
 /**
  * Custom implementation of Spring Security's RememberMeServices.
@@ -183,8 +181,12 @@ public class CustomPersistentRememberMeServices extends AbstractRememberMeServic
 
     PersistentToken token = persistentTokenService.getPersistentToken(presentedSeries);
 
-    if (token == null) {
-      // No series match, so we can't authenticate using this cookie
+    try {
+      if (token == null || token.getTokenValue() == null) {
+        // No series match, so we can't authenticate using this cookie
+        throw new RememberMeAuthenticationException("No persistent token found for series id: " + presentedSeries);
+      }
+    } catch (Exception e) {
       throw new RememberMeAuthenticationException("No persistent token found for series id: " + presentedSeries);
     }
 

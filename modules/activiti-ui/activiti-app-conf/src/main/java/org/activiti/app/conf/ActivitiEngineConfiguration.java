@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.activiti.app.conf;
+/*package org.activiti.app.conf;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -200,4 +200,4 @@ public class ActivitiEngineConfiguration {
     public org.activiti.form.api.FormService formEngineFormService() {
       return processEngine().getFormEngineFormService();
     }
-}
+}*/

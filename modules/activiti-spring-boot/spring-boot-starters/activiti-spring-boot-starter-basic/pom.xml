@@ -25,11 +25,12 @@
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-engine</artifactId>
+			<version>6.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-spring</artifactId>
-
+			<version>6.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,6 +57,7 @@
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-common-rest</artifactId>
 			<optional>true</optional>
+			<version>6.0.0</version>
 		</dependency>
 
 		<!-- integration -->
@@ -77,16 +79,19 @@
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-image-generator</artifactId>
 			<optional>true</optional>
+			<version>6.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-bpmn-model</artifactId>
 			<optional>true</optional>
+			<version>6.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-bpmn-layout</artifactId>
 			<optional>true</optional>
+			<version>6.0.0</version>
 		</dependency>
 
 
@@ -124,6 +129,30 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-form-engine</artifactId>
+			<version>6.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-form-engine-configurator</artifactId>
+			<version>6.0.0</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-dmn-engine</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-dmn-engine-configurator</artifactId>
+			<version>6.0.0</version>
 		</dependency>
 	</dependencies>
 

@@ -1,3 +1,4 @@
+/*
 package org.activiti.test.spring.boot;
 
 import org.activiti.engine.IdentityService;
@@ -17,9 +18,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
+*/
 /**
  * @author Josh Long
- */
+ *//*
+
 public class SecurityAutoConfigurationTest {
     private AnnotationConfigApplicationContext applicationContext;
 
@@ -89,3 +92,4 @@ public class SecurityAutoConfigurationTest {
 
     }
 }
+*/

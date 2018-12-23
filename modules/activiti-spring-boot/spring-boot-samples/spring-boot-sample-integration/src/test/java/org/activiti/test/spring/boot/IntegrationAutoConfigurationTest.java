@@ -1,3 +1,4 @@
+/*
 package org.activiti.test.spring.boot;
 
 import java.util.HashMap;
@@ -30,11 +31,13 @@ import org.springframework.integration.dsl.support.GenericHandler;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.client.RestTemplate;
 
+*/
 /**
  * Test the Spring Integration inbound inboundGateway support.
  *
  * @author Josh Long
- */
+ *//*
+
 public class IntegrationAutoConfigurationTest {
 	
 	 @Configuration
@@ -143,3 +146,4 @@ public class IntegrationAutoConfigurationTest {
 
    
 }
+*/
