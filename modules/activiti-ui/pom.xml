@@ -5,14 +5,15 @@
   <name>Activiti UI App Root</name>
   <artifactId>activiti-ui-root</artifactId>
   <packaging>pom</packaging>
-  
+	<version>6.0.0-boot2</version>
+
   <parent>
     <groupId>org.activiti</groupId>
     <artifactId>activiti-root</artifactId>
     <relativePath>../..</relativePath>
     <version>6.0.0</version>
   </parent>
-  
+
   <properties>
     	<!-- Maven build properties -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,7 +21,7 @@
 
 		<!-- Libraries versions -->
 		<activiti.version>6.0.0</activiti.version>
-	    <spring.version>4.1.6.RELEASE </spring.version>
+	    <spring.version>4.1.7.RELEASE</spring.version>
 		<spring.security.version>4.0.1.RELEASE</spring.security.version>
 		<hibernate.version>4.2.16.Final</hibernate.version>
 		<jackson.version>2.3.3</jackson.version>
@@ -28,7 +29,7 @@
 		<hazelcastcache.version>3.1.5</hazelcastcache.version>
 		<batik.version>1.7</batik.version>
 		<jetty.version>9.1.3.v20140225</jetty.version>
-		
+
 		<!-- Web container version -->
 		<tomcat.version>7.0.53</tomcat.version>
   </properties>
@@ -36,7 +37,7 @@
 	<prerequisites>
 		<maven>3.0.0</maven>
 	</prerequisites>
-	
+
 	<modules>
 		<module>content-storage-api</module>
 		<module>content-storage-fs</module>
@@ -146,14 +147,14 @@
 			<artifactId>activiti-rest</artifactId>
 			<version>${activiti.version}</version>
 		</dependency>
-		
+
 		<!-- Xerces is needed (eg by jboss, which ships with an old version), for process definition parsing -->
 		<dependency>
 			<groupId>xerces</groupId>
 			<artifactId>xercesImpl</artifactId>
 			<version>2.11.0</version>
 		</dependency>
-		
+
 
 		<!-- LOGGING -->
 		<dependency>
@@ -400,7 +401,7 @@
 			<artifactId>spring-security-ldap</artifactId>
 			<version>${spring.security.version}</version>
 		</dependency>
-        
+
         <!-- EMAIL -->
         <dependency>
             <groupId>org.freemarker</groupId>
@@ -417,7 +418,7 @@
 			<artifactId>commons-validator</artifactId>
 			<version>1.4.0</version>
 		</dependency>
-		
+
 	  	<!-- Groovy needed for embedded scripting -->
 	  	<dependency>
         	<groupId>org.codehaus.groovy</groupId>

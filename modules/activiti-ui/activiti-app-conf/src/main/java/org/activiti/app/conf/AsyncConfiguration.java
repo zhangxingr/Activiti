@@ -10,6 +10,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/*
 package org.activiti.app.conf;
 
 import java.util.concurrent.Executor;
@@ -50,3 +51,4 @@ public class AsyncConfiguration implements AsyncConfigurer {
 		return new SimpleAsyncUncaughtExceptionHandler();
     }
 }
+*/
