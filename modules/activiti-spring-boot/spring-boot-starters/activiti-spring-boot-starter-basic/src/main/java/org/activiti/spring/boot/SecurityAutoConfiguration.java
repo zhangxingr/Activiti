@@ -35,7 +35,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
  * @author Josh Long
  */
 @Configuration
-@AutoConfigureBefore(org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class)
+//@AutoConfigureBefore(org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class)
+@AutoConfigureBefore(org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class)
 public class SecurityAutoConfiguration {
 
   @Configuration
